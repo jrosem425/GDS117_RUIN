@@ -26,12 +26,12 @@ gameStates[`menu`] =function(){
 		}
 
 		//Hover Effect Graffic
-		startButton.img.src= "images/buttonHoverTest.png"
+		startButton.img.src= "images/playButtonHover.png"
 	}
 	else
 	{
 		//Default Button Graphic
-		startButton.img.src = "images/buttonNormalTest.png"
+		startButton.img.src = "images/playButtonNormal.png"
 	}
 	
 	menuBackground.drawStaticImage();
