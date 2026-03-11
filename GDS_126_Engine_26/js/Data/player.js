@@ -44,7 +44,7 @@ var playerData ={
 		//The walwidth:128, height:128,
 		walk:
 		{
-			fps:1,
+			fps:3,
 			cycle:true,
 			frames:
 			[
@@ -57,9 +57,7 @@ var playerData ={
 				{width:128, height:128, startX:768, startY:256},
 				{width:128, height:128, startX:896, startY:256},
 				{width:128, height:128, startX:1024, startY:256},
-				{width:128, height:128, startX:1152, startY:256},
-				{width:128, height:128, startX:1280, startY:256},
-				{width:128, height:128, startX:1408, startY:256}
+				{width:128, height:128, startX:1152, startY:256}
 			]
 		},
 		//The jump animation 
@@ -69,41 +67,60 @@ var playerData ={
 			cycle:false,
 			frames:
 			[
-				{width:128, height:128, startX:640, startY:0}
+				{width:128, height:128, startX:0, startY:384},
+				{width:128, height:128, startX:128, startY:384},
+				{width:128, height:128, startX:256, startY:384}
 			]
 		},
 		//The crouch animation 
 		crouch:
 		{
 			fps:15,
-			cycle:false,
+			cycle:true,
 			frames:
 			[
 				{width:128, height:128, startX:0, startY:128},
 				{width:128, height:128, startX:128, startY:128},
-				{width:128, height:128, startX:256, startY:128}
-				// {width:128, height:128, startX:384, startY:128}
+				{width:128, height:128, startX:256, startY:128},
+				{width:128, height:128, startX:384, startY:128},
+				{width:128, height:128, startX:512, startY:128},
+				{width:128, height:128, startX:640, startY:128},
+				{width:128, height:128, startX:768, startY:128},
+				{width:128, height:128, startX:896, startY:128},
+				{width:128, height:128, startX:1024, startY:128}
 		
 			]
 		},
 		//The attack animation 
 		attack:
 		{
-			fps:3,
-			cycle:false,
+			fps:20,
+			cycle:true,
 			//width:300,
 			frames:
 			[
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0}
+				{width:128, height:128, startX:0, startY:512},
+				{width:128, height:128, startX:128, startY:512},
+			
+				
+			]
+		},
+
+
+		nails:
+		{
+			fps:15,
+			cycle:true,
+			//width:300,
+			frames:
+			[
+				{width:128, height:128, startX:0, startY:640},
+				
+			
 				
 			]
 		}
 	}
+
 		
 }

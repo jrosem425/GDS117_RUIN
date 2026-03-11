@@ -86,11 +86,11 @@ var currentBullet = 0;
 
 for(let i=0; i<100; i++)
 {
-	bullets[i] = new GameObject({width:64, height:64})
+	bullets[i] = new GameObject({width:128, height:128})
 	//bullets[i].img.src="images/mrt.jpg"
 	bullets[i].makeSprite(playerData)
 	bullets[i].y=-10000
-	bullets[i].changeState(`walk`)
+	bullets[i].changeState(`nails`)
 }
 
 //console.log(bullets)
@@ -299,7 +299,7 @@ gameStates[`level1`] = function()
 	//Moves, checks collision and renders projectiles.
 	for(let i=0; i<bullets.length; i++)
 	{
-		if(bullets[i].overlap(stage)) bullets[i].vy+=1;
+		
 		bullets[i].move()
 		bullets[i].play(function(){return}).drawSprite()
 		//bullets[i].angle+=10
