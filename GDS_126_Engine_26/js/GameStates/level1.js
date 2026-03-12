@@ -1,3 +1,6 @@
+//background music
+sounds.play('backgroundSound')
+
 
 /*------------Use this if you want to implement States---------------*/
 var gravity = 1;
@@ -138,6 +141,7 @@ gameStates[`level1`] = function()
 	}
 	if(keys[`W`] && wiz.canJump )
 	{
+		sounds.play('jumpSound')
 		wiz.canJump = false;
 		wiz.vy = wiz.jumpHeight;
 		wiz.changeState(`jump`)
@@ -157,6 +161,7 @@ gameStates[`level1`] = function()
 	{
 		if(canShoot)
 		{
+			sounds.play('attackSound')
 			wiz.changeState(`attack`)
 			shotTimer = shotDelay
 			//console.log(`Boom`)
