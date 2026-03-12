@@ -1,5 +1,5 @@
 //background music
-sounds.play('backgroundSound')
+sounds.play('jumpSound')
 
 
 /*------------Use this if you want to implement States---------------*/
