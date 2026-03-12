@@ -105,6 +105,7 @@ gameStates[`level1`] = function()
 	if(!keys[`W`] && !keys[`S`] && !keys[`D`] && !keys[`A`] && !keys[` `] && canShoot && wiz.canJump)
 	{
 		wiz.changeState(`idle`)
+		
 	}
 	
 	
