@@ -23,6 +23,10 @@ gameStates[`menu`] =function(){
 		{
 			//Changes to the game state
 			gameStates.changeState(`level1`)
+			let audio = document.getElementById("backGround")
+			audio.volume = 0.3;
+			audio.play();
+			
 		}
 
 		//Hover Effect Graffic
